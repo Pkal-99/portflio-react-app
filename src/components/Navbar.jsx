@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import Logo from '../assetes/logo1.png'
+import Logo from '../assetes/logo2.gif'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -10,8 +10,8 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
-        <img src={Logo} alt="Logo Image1" style={{width:'50px'}} />
+      <div className='border-2'>
+        <img src={Logo} alt="Logo Image1" style={{width:'70px'}} />
         
       </div>
       {/* desktop menu  under 768px screen size hide menu and convert to mobile mode if it is morethan 768px desktop size md :flex is 768*/}
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li className='py-6 text-4x'><Link onClick={handleClick} to="contact" smooth={true} duration={500}> Contact </Link></li>
         </ul>
       {/* social Icons*/}
-      <div className='hidden lg:flex fixed flex-col top-{35%} left-0'>
+      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
     <ul>
       <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'> 
         <a className='flex justify-between items-center w-full text-gray-300' href="/" >Linkedin <FaLinkedin size={30}/></a>
